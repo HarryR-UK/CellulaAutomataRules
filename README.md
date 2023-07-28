@@ -8,7 +8,7 @@ This program uses C++ and the SFML library for graphics to visually represent th
 -
 - use command line arguments to change the rules of the game
 -
-- FOLLOW THE ORDER exactly
+- FOLLOW THE ORDER EXACTLY
 -
 - ./Program -b . . . -s . . .
 -
