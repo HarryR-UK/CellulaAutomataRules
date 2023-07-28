@@ -46,7 +46,16 @@ This program uses C++ and the SFML library for graphics to visually represent th
 > **W A S D** will pan around the map
 
 # IMAGES
+RUNNING THE PROGRAM
 
-// img
+![RUNNING PROGRAM](img/RunningProgram.png)
+
+
+![STILL IMAGE](img/GOL.png)
+
+![STILL IMAGE](img/GOL2.png)
+
+![DRAW](img/DRAW.png)
 
 # GIFS
+![GIF](img/gifs/GOLGIF.gif)
