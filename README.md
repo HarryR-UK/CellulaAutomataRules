@@ -3,20 +3,27 @@ Conway's Game of Life is a cellular automata which simulates the population of l
 
 This program uses C++ and the SFML library for graphics to visually represent these rules. This produces some interesting results!
 
+# Starting the game
+- Please note that this program allows for changing the rules that are associated with the game of life
+-
+- use command line arguments to change the rules of the game
+-
+- FOLLOW THE ORDER exactly
+-
+- ./Program -b . . . -s . . .
+-
+- Replace the '.' with your single digit numbers
+-
+- if left empty, the program will automatically set the rules to the standard Conway's rules (B3/S23)
 
-## 4 Rules
-1.  Any live cell with fewer than two live neighbours dies, as if by underpopulation.
-2.  Any live cell with two or three live neighbours lives on to the next generation.
-3.  Any live cell with more than three live neighbours dies, as if by overpopulation.
-4.  Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 # Controls
 
 > **SPACE** is used to start and stop the simulation
 >
-> **LEFT CLICK** is used to turn cells alive when the game is paused
+> **LEFT CLICK** is used to turn cells alive
 >
-> **RIGHT CLICK** is used to kill cells when the game is paused
+> **RIGHT CLICK** is used to kill cells
 >
 > **R** will reset the randomised cells when the game is paused
 > 
@@ -40,11 +47,6 @@ This program uses C++ and the SFML library for graphics to visually represent th
 
 # IMAGES
 
-![STILL IMAGE](img/GOL.png)
-
-![STILL IMAGE](img/GOL2.png)
-
-![DRAW](img/DRAW.png)
+// img
 
 # GIFS
-![GIF](img/gifs/GOLGIF.gif)
