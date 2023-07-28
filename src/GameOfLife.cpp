@@ -9,11 +9,6 @@ void GameOfLife::setBirthNumberArgs(std::vector<int> temp)
         m_birthRules.push_back(i);
     }
 
-    if(m_birthRules.empty())
-    {
-        m_birthRules.push_back(0);
-        m_birthRules.push_back(3);
-    }
 }
 void GameOfLife::setSurviveNumberArgs(std::vector<int> temp)
 {
@@ -23,12 +18,6 @@ void GameOfLife::setSurviveNumberArgs(std::vector<int> temp)
         m_surviveRules.push_back(i);
     }
 
-    if(m_surviveRules.empty())
-    {
-        m_surviveRules.push_back(0);
-        m_surviveRules.push_back(2);
-        m_surviveRules.push_back(3);
-    }
     
     int tempMax = 0;
     int tempMin = 10000000;
