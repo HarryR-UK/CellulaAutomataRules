@@ -61,3 +61,5 @@ MakeFile
 *.sh
 
 compile
+
+.DS_Store
