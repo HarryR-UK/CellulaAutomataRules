@@ -1,6 +1,8 @@
 #include "../include/GameOfLife.h"
 #include <cstddef>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 void GameOfLife::setBirthNumberArgs(std::vector<int> temp)
 {
@@ -14,7 +16,6 @@ void GameOfLife::setSurviveNumberArgs(std::vector<int> temp)
 {
     for(auto &i : temp)
     {
-        std::cout << i << '\n';
         m_surviveRules.push_back(i);
     }
 
@@ -97,6 +98,7 @@ void GameOfLife::initText()
     m_numberOfLiveCellsText.setPosition(10,10);
     m_numberOfLiveCellsText.setString("NULL");
 
+
     m_noLiveCells = 0;
 
 }
@@ -131,6 +133,7 @@ void GameOfLife::updateText()
         << "FPS: " << Time::getFps() << '\n'
         ;
     m_numberOfLiveCellsText.setString(ss.str());
+
 }
 
 void GameOfLife::initGrid()
@@ -183,6 +186,30 @@ void GameOfLife::updateTileSelector()
 {
     m_tileSelector.setPosition(m_mousePosGrid.x * m_gridSizeF, m_mousePosGrid.y * m_gridSizeF);
 
+}
+
+void GameOfLife::setRulesText()
+{
+
+    std::stringstream ss_rules("RULES: B", std::ios_base::app | std::ios_base::out);
+    for(std::size_t i = 1; i < m_birthRules.size(); ++i)
+    {
+        ss_rules << m_birthRules[i];
+    }
+
+    ss_rules << "/S";
+
+    for(std::size_t x = 1; x < m_surviveRules.size(); ++x)
+    {
+        ss_rules << m_surviveRules[x];
+    }
+
+
+    m_rulesText.setFont(m_font);
+    m_rulesText.setCharacterSize(20);
+    m_rulesText.setFillColor(sf::Color::White);
+    m_rulesText.setString(ss_rules.str());
+    m_rulesText.setPosition(m_window->getSize().x - (m_rulesText.getGlobalBounds().width + 10), 10);
 }
 
 void GameOfLife::updateColor(float deltaTime)
@@ -270,6 +297,7 @@ void GameOfLife::updateColor(float deltaTime)
 void GameOfLife::renderUI(sf::RenderTarget &target)
 {
     target.draw(m_numberOfLiveCellsText);
+    target.draw(m_rulesText);
 }
 
 
@@ -446,6 +474,8 @@ void GameOfLife::simulate()
 void GameOfLife::setWindow(sf::RenderWindow &window)
 {
     m_window = &window;
+    
+    
 }
 
 void GameOfLife::setMousePosGrid(sf::Vector2u mousePosGrid)

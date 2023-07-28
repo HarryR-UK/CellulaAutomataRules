@@ -76,6 +76,7 @@ class GameOfLife
         // UI
         sf::Font m_font;
         sf::Text m_numberOfLiveCellsText;
+        sf::Text m_rulesText;
         long unsigned int m_noLiveCells;
 
         //color changing
@@ -129,6 +130,7 @@ class GameOfLife
         void setBirthNumberArgs(std::vector<int> temp);
         void setSurviveNumberArgs(std::vector<int> temp);
         
+        void setRulesText();
 };
 
 

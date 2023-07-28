@@ -263,6 +263,7 @@ void Game::startGLoop()
     m_gameOfLife.startSimThread();
     m_gameOfLife.setBirthNumberArgs(m_birthRules);
     m_gameOfLife.setSurviveNumberArgs(m_surviveRules);
+    m_gameOfLife.setRulesText();
     //m_renderThread = std::thread(&Game::render, this);
     while(this->isRunning())
     {
