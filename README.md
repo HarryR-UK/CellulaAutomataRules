@@ -71,7 +71,7 @@ This section show-cases only a few different rules which produce some interestin
 
 ![NEON COMMAND](img/rules/NeonRuleCommand.png) 
 
-![NEON IMAGE](img/rules/NronRulePic.png)
+![NEON IMAGE](img/rules/NeonRulePic.png)
 
 # GIFS
 ![GIF](img/gifs/GOLGIF.gif)
