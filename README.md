@@ -57,5 +57,24 @@ RUNNING THE PROGRAM
 
 ![DRAW](img/DRAW.png)
 
+# RULES
+
+This section show-cases only a few different rules which produce some interesting patterns.
+
+#### MAZE
+
+![MAZE COMMAND](img/rules/MazeRuleCommand.png)
+
+![MAZE IMAGE](img/rules/MazeRulePic.png)
+
+#### NEON
+
+![NEON COMMAND](img/rules/NeonRuleCommand.png) 
+
+![NEON IMAGE](img/rules/NronRulePic.png)
+
 # GIFS
 ![GIF](img/gifs/GOLGIF.gif)
+
+
+![MAZE](img/gifs/maze.gif)
